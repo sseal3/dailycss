@@ -1,0 +1,103 @@
+body {
+  background: #ffcd94;
+  height: 100%;
+  width:100%;
+  font-family: Helvetica, sans-serif;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 720px;
+  height: 800px;
+}
+
+.ruler {
+  position: absolute;
+  top: 25%;
+  width: 720px;
+  height: 12%;
+  background: white;
+  border: 1px solid black;
+}
+
+.mark {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 1px;
+  height: 48px;
+  background: black;
+  z-index: 1;
+}
+
+.mark:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 3.75px;
+  width: 1px;
+  height: 10px;
+  background: black;
+  z-index: 2;
+}
+
+.mark.inch.zero {
+  width: 1px;
+}
+.mark.inch.one {
+  left: 60px;
+}
+.mark.inch.two {
+  left: 120px;
+}
+.mark.inch.three {
+  left: 180px;
+}
+.mark.inch.four {
+  left: 240px;
+}
+.mark.inch.five {
+  left: 300px;
+}
+.mark.inch.six {
+  left: 360px;
+}
+.mark.inch.seven {
+  left: 420px;
+}
+.mark.inch.eight {
+  left: 480px;
+}
+.mark.inch.nine {
+  left: 540px;
+}
+.mark.inch.ten {
+  left: 600px;
+}
+.mark.inch.eleven {
+  left: 660px;
+}
+.mark.inch.twelve {
+  left: 720px;
+}
+.mark.half {
+  height:30px;
+  left: 30px;
+}
+.mark.quarter {
+  height:25px;
+  left: 15px;
+}
+.mark.eighth {
+  height:17.5px;
+  left: 7.5px;
+}
+
+.numeral {
+  position: absolute;
+  right: 5px;
+  top: 16px;
+}
