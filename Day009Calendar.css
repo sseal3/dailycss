@@ -1,0 +1,68 @@
+body {
+  background: #300020;
+  height: 100%;
+  width:100%;
+  font-family: Helvetica, sans-serif;
+}
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 500px;
+  height: 500px;
+}
+
+.cal {
+  position: absolute;
+  border-radius: 3%;
+  top: 10%;
+  width: 90%;
+  height: 78%;
+  background: white;
+}
+.calendar-page {
+  position: absolute;
+  border-radius: 3%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.month {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: red;
+}
+.spiral {
+  background: white;
+  position: absolute;
+  width: 20px;
+  top: 3%;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 2;
+}
+.spiral::before {
+  content: "";
+  background: grey;
+  position: absolute;
+  width: 10px;
+  top: -100%;
+  left: 30%;
+  height: 150%;
+  border-radius: 30%;
+}
+.spiral.a { left: 9%; }
+.spiral.b { left: 16.7%; }
+.spiral.c { left: 24.4%; }
+.spiral.d { left: 32.1%; }
+.spiral.e { left: 39.8%; }
+.spiral.f { left: 47.5%; }
+.spiral.g { left: 55.2%; }
+.spiral.h { left: 62.9%; }
+.spiral.i { left: 70.6%; }
+.spiral.j { left: 78.3%; }
+.spiral.k { left: 86%; }
