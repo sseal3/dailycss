@@ -1,0 +1,137 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  background: #90ee90;
+}
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 300px;
+  height: 500px;
+}
+.center
+{
+  position: absolute;
+  top: 50%;
+  left: -12%;
+}
+.center.one
+{
+  transform: rotate(-80deg);
+}
+.center.two
+{
+  transform: rotate(-105deg);
+  top: 49%;
+  left: -53.8%;
+}
+.center.three
+{
+  transform: rotate(115deg);
+  top: 54%;
+  left: -12%;
+}
+.center.four
+{
+  transform: rotate(104deg);
+  top: 52%;
+  left: -29.5%;
+}
+.center.five
+{
+  transform: rotate(72.2deg);
+  top: 52%;
+  left: -36.9%;
+}
+.center.six
+{
+  transform: rotate(268deg);
+  top: 50%;
+  left: -39%;
+}
+.pencil
+{
+  width: 400px;
+  height: 15px;
+  background: #ffc334;
+  border-top: 10px solid #ffd268;
+  border-bottom: 10px solid #e2af38;
+}
+.pencil p
+{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 8px;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d09200;
+}
+.pencil:before
+{
+  content: '';
+  position: absolute;
+  left: -80px;
+  top: 0;
+  border-style: solid;
+  border-color: transparent #e29663 transparent transparent;
+  border-width: 17px 40px 18px;
+}
+.pencil:after
+{
+  content: '';
+  position: absolute;
+  left: -80px;
+  top: 0;
+  border-style: solid;
+  border-color: transparent #262626 transparent transparent;
+  border-width: 17px 40px 18px;
+  transform: scale(.3);
+}
+.top
+ {
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 15px;
+   width: 30px;
+   background: #ccc;
+   border-top: 10px solid #dedede;
+   border-bottom: 10px solid #b9bfbf;
+ }
+ .top:before
+  {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -100%;
+    width: 150%;
+    height: 100%;
+    background: #d76f6e;
+    border-top: 10px solid #da8e8d;
+    border-bottom: 10px solid #c84957;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+.container {
+  position: absolute;
+  width: 12%;
+  height: 28.2%;
+  top: 51%;
+  left: 4%;
+}
+.cup {
+  position: absolute;
+  width: 190px;
+  height: 255px;
+  top: 0%;
+  left: 0%;
+  opacity: 0.5;
+  background: salmon;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
