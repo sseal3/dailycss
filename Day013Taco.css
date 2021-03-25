@@ -1,0 +1,291 @@
+body {
+  background: #de67b4;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 4%;
+  margin-left: 35%;
+  width: 1000px;
+  height: 1000px;
+}
+
+.shell {
+  position: absolute;
+  top: 20%;
+  width: 400px;
+  height: 200px;
+  background: #fcc062;
+  transform: skew(10deg, 10deg);
+  border-radius: 400px 400px 10% 0%;
+  border: 10px solid #f7931e;
+  z-index: 8;
+}
+.shell.back {
+  top: 15%;
+  left: 4%;
+  height: 220px;
+  transform: skew(-5deg, 10deg);
+  z-index: 0;
+}
+
+.shell-curve {
+  position: absolute;
+  top: 88%;
+  left: 90%;
+  width: 8%;
+  height: 30%;
+  background: #fcc062;
+  border-radius: 0% 0% 150% 10%;
+  border: 10px solid #f7931e;
+  transform: rotate(-5deg);
+  clip-path: polygon(100% 0, 0 76%, 100% 82%);
+  z-index: -1;
+}
+.beef {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 3%;
+  height: 3%;
+  background: #7f4f2f;
+  border-radius: 100%;
+  border: 4px solid #754c24;
+  z-index: 5;
+}
+
+.beef:nth-child(1) {
+  top: 32%;
+  left: 42%;
+  height: 3%;
+  width: 3%;
+}
+.beef:nth-child(2) {
+  top: 34%;
+  left: 42%;
+  height: 2%;
+  width: 2%;
+}
+.beef:nth-child(3) {
+  top: 35%;
+  left: 39%;
+  height: 4%;
+  width: 4%;
+}
+.beef:nth-child(4) {
+  top: 36%;
+  left: 41%;
+  height: 3%;
+  width: 3%;
+}
+.beef:nth-child(5) {
+  top: 38%;
+  left: 40%;
+  height: 2%;
+  width: 2%;
+}
+.beef:nth-child(6) {
+  top: 38%;
+  left: 41.5%;
+  height: 2%;
+  width: 2%;
+}
+.beef:nth-child(7) {
+  top: 33%;
+  left: 42%;
+  height: 1%;
+  width: 1%;
+}
+.beef:nth-child(8) {
+  top: 30%;
+  left: 40%;
+  height: 3%;
+  width: 3%;
+}
+.beef:nth-child(9) {
+  top: 32%;
+  left: 39%;
+  height: 3%;
+  width: 3%;
+}
+.lettuce {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 21%;
+  left: 30%;
+  border-style: solid;
+  border-width: 0 25px 50px 25px;
+  border-color: transparent transparent #8cc63f transparent;
+  z-index: 1;
+}
+
+.lettuce:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 23px 38px 23px;
+  border-color: transparent transparent #8cd63f transparent;
+  transform: rotate(15deg);
+}
+.lettuce.a {
+  left: 28%;
+  top: 19%;
+  transform: rotate(95deg);
+  z-index: 5;
+}
+.lettuce.b {
+  left: 33%;
+  top: 25%;
+  z-index: 2;
+}
+.lettuce.c {
+  left: 36%;
+  top: 30.5%;
+  border-width: 0 30px 38px 30px;
+  transform: rotate(200deg);
+  z-index: 4;
+}
+.lettuce.d {
+  left: 16%;
+  top: 16%;
+  border-width: 0 60px 98px 60px;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+.lettuce.e {
+  left: 21%;
+  top: 14%;
+  border-width: 0 40px 98px 40px;
+  transform: rotate(85deg);
+  z-index: 4;
+}
+.lettuce.f {
+  left: 30%;
+  top: 19%;
+  z-index: 3;
+}
+.lettuce.g {
+  left: 22%;
+  top: 14%;
+  z-index: 2;
+}
+.lettuce.h {
+  left: 12%;
+  top: 16%;
+  z-index: 3;
+}
+.lettuce.i {
+  left: 29%;
+  top: 17%;
+  z-index: 1;
+}
+.lettuce.j {
+  left: 35%;
+  top: 22%;
+  z-index: 1;
+  transform: rotate(30deg);
+}
+.tomato {
+  position: absolute;
+  top: 24%;
+  left: 30%;
+  width: 4%;
+  height: 3%;
+  background: #f14950;
+  border-radius: 4% 0% 5% 5%;
+  transform: rotate(40deg);
+  border: 4px solid #c1272d;
+  z-index: 3;
+}
+.tomato.b {
+  left: 10%;
+  top: 19%;
+  transform: rotate(30deg);
+  z-index: 3;
+}
+.tomato.c {
+  left: 18%;
+  top: 16%;
+  transform: rotate(-30deg);
+  z-index: 4;
+}
+.tomato.d {
+  left: 26%;
+  top: 16%;
+  transform: rotate(-60deg);
+  z-index: 3;
+}
+.tomato.e {
+  left: 37%;
+  top: 27%;
+  transform: rotate(-16deg);
+  z-index: 3;
+}
+.tomato.f {
+  left: 34%;
+  top: 21%;
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+.tomato.g {
+  left: 24%;
+  top: 21%;
+  transform: rotate(-20deg);
+  z-index: 3;
+}
+
+.cheese {
+  position: absolute;
+  top: 24.7%;
+  left: 30%;
+  width: 8%;
+  height: 4%;
+  background: transparent;
+  border-radius: 50%;
+  transform: rotate(40deg);
+  border: 9px solid #fcee21;
+  clip-path: polygon(0 0, 100% 0%, 85% 40%, 15% 40%);
+  z-index: 5;
+}
+.cheese.b {
+  left: 24%;
+  top: 20%;
+  transform: rotate(-20deg);
+}
+.cheese.c {
+  left: 14%;
+  top: 16%;
+  transform: rotate(20deg);
+}
+.cheese.d {
+  left: 23%;
+  top: 16%;
+  transform: rotate(120deg);
+  z-index: 3;
+}
+.cheese.e {
+  left: 33%;
+  top: 26%;
+  transform: rotate(180deg);
+}
+.cheese.f {
+  left: 11%;
+  top: 16%;
+  transform: rotate(220deg);
+}
+.cheese.g {
+  left: 32%;
+  top: 20%;
+  transform: rotate(-60deg);
+  z-index: 2;
+}
