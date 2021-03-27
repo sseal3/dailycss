@@ -1,0 +1,142 @@
+body {
+  background: #0Dbc86;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 4%;
+  width: 500px;
+  height: 500px;
+}
+
+.cake {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 80%;
+  height: 40%;
+  background: #fcc062;
+  border-radius: 0% 0% 10% 0%;
+  border-right: 10px solid #f7931e;
+  border-bottom: 10px solid #f7931e;
+  z-index: 0;
+}
+.icing-top {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 82%;
+  height: 20%;
+  background: #5f322d;
+  z-index: 1;
+  clip-path: polygon(65% 0, 0% 100%, 100% 100%);
+}
+.icing-side {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 82%;
+  height: 15%;
+  background: #7b4835;
+  z-index: 1;
+}
+.icing-drip {
+  position: absolute;
+  top: 49%;
+  left: 10%;
+  width: 9.1%;
+  height: 12%;
+  background: #7b4835;
+  border-radius: 100%;
+  z-index: 2;
+}
+.icing-drip.two {
+  left: 19.2%;
+  background: #fcc062;
+}
+.icing-drip.three {
+  left: 28.3%;
+  top: 53%;
+  background: #7b4835;
+}
+.icing-drip.plus {
+  left: 28.3%;
+  height: 10%;
+  border-radius: 0%;
+  background: #7b4835;
+}
+.icing-drip.four {
+  left: 37.4%;
+  background: #fcc062;
+}
+.icing-drip.five {
+  left: 46.5%;
+  top: 60%;
+  background: #7b4835;
+}
+.icing-drip.elongated {
+  left: 46.5%;
+  height: 17%;
+  border-radius: 0%;
+  background: #7b4835;
+}
+.icing-drip.six {
+  left: 55.6%;
+  background: #fcc062;
+}
+.icing-drip.seven {
+  left: 64.7%;
+  background: #7b4835;
+}
+.icing-drip.eight {
+  left: 73.8%;
+  background: #fcc062;
+}
+.icing-drip.nine {
+  left: 82.9%;
+  background: #7b4835;
+}
+.cherry {
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  width: 15%;
+  height: 15%;
+  background: #CD001A;
+  border-radius: 100%;
+  border-right: 3px solid #8C0013;
+  border-bottom: 2px solid #8C0013;
+  border-top: 1px solid #8C0013;
+  z-index: 2;
+}
+.cherry-stem {
+  position: absolute;
+  top: 3.5%;
+  left: 55%;
+  width: 25%;
+  height: 20%;
+  background: transparent;
+  border-radius: 50%;
+  transform: rotate(-50deg);
+  border: 5px solid #8C0013;
+  clip-path: polygon(0 0, 100% 0%, 85% 40%, 15% 40%);
+  z-index: 1;
+}
+
+.cherry-leaf {
+  position: absolute;
+  top: 6%;
+  left: 58%;
+  width: 15%;
+  height: 15%;
+  background: #3F800D;
+  border-radius: 0% 100% 0% 100%;
+  clip-path: polygon(29% 0, 100% 0, 100% 100%, 0 100%, 0 29%);
+  border: 1px solid green;
+  z-index: 0;
+}
