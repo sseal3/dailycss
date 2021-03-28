@@ -1,0 +1,147 @@
+body {
+  background: #ffbf00;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 4%;
+  width: 500px;
+  height: 500px;
+}
+
+.pie {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  background: #f3ba39;
+  border-radius: 50%;
+  border: 5px solid black;
+  z-index: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+}
+
+.pan {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 80%;
+  height: 15%;
+  background: #b2d135;
+  border: 5px solid black;
+  z-index: 0;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+.pan:after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 170px;
+  background: black;
+  left: -21%;
+  top 10%;
+  transform: rotate(63.8deg);
+  z-index: 1;
+}
+.pan:before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 170px;
+  background: black;
+  right: -21%;
+  top 10%;
+  transform: rotate(-63.8deg);
+  z-index: 1;
+}
+.vent {
+  position: absolute;
+  top: 25%;
+  left: 48%;
+  width: 25px;
+  height: 25px;
+  background: #e61d23;
+  border-radius: 100% 0 85% 20% / 85% 0 100% 20%;
+  border: 3px solid black;
+  transform: rotate(-45deg);
+  z-index: 0;
+}
+.vent.two {
+  transform: rotate(-95deg);
+  left: 55%;
+  top: 24%;
+}
+.vent.three {
+  transform: rotate(-5deg);
+  left: 41%;
+  top: 24%;
+}
+
+.crust {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  width: 16%;
+  height: 12%;
+  background: #f3ba39;
+  border-radius: 100%;
+  border: 5px solid black;
+  z-index: 2;
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+}
+.crust.b {
+  transform: rotate(180deg);
+  top: 34%;
+  left: 15%;
+}
+.crust.c {
+  left: 23%;
+}
+.crust.d {
+  transform: rotate(180deg);
+  top: 34%;
+  left: 31%;
+}
+.crust.e {
+  left: 39%;
+}
+.crust.f {
+  transform: rotate(180deg);
+  top: 34%;
+  left: 47%;
+}
+.crust.g {
+  left: 55%;
+}
+.crust.h {
+  transform: rotate(180deg);
+  top: 34%;
+  left: 63%;
+}
+.crust.i {
+  left: 71%;
+}
+.crust.j {
+  transform: rotate(180deg);
+  top: 34%;
+  left: 79%;
+}
+.crust.k {
+  transform: rotate(180deg);
+  top: 36%;
+  left: 7%;
+  width: 8%;
+  height: 5%;
+}
+.crust.l {
+  top: 35%;
+  left: 87%;
+  width: 8%;
+  height: 5%;
+}
