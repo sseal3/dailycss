@@ -1,0 +1,183 @@
+body {
+  background: white;
+  height: 100%;
+  width:100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 600px;
+}
+
+.mike {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  width: 35%;
+  height: 35%;
+  border-radius: 100%;
+  background: #98c93c;
+}
+
+.green-head {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:  #98c93c;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+.sully {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  width: 35%;
+  height: 35%;
+  border-radius: 100%;
+  background: #1ba9ab;
+}
+
+.blue-head {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:  #1ba9ab;
+  border-radius: 100%;
+  z-index: 3;
+}
+.eye {
+  width: 42%;
+  height: 42%;
+  left: 29%;
+  top: 12%;
+  position: absolute;
+  background:  white;
+  border-radius: 100%;
+  z-index: 3;
+}
+.eye::after {
+  content: '';
+  width: 75%;
+  height: 75%;
+  left: 15%;
+  top: 15%;
+  position: absolute;
+  background: #432815;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.pupil {
+  width: 20%;
+  height: 20%;
+  left: 42%;
+  top: 40%;
+  position: absolute;
+  background:  white;
+  border-radius: 100%;
+  z-index: 3;
+}
+.pupil::after {
+  content: '';
+  width: 200%;
+  height: 200%;
+  left: -200%;
+  top: -180%;
+  position: absolute;
+  background:  white;
+  border-radius: 100%;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  z-index: 3;
+}
+.eye.left {
+  transform: scale(0.8);
+  left: 15%;
+}
+.eye.right {
+  transform: scale(0.7);
+  left: 50%;
+  top: 20%;
+}
+
+.mouth {
+  width: 50%;
+  height: 45%;
+  left: 25%;
+  top: 40%;
+  position: absolute;
+  background: #89b13e;
+  border-radius: 100%;
+  clip-path: polygon(0 100%, 100% 100%, 100% 55%, 0 45%);
+  z-index: 3;
+  overflow: hidden;
+}
+.mouth.blue {
+  background: #178e94;
+}
+.teeth-top {
+  width: 70%;
+  height: 30%;
+  left: 15%;
+  top: 40%;
+  position: absolute;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 91% 100%, 71% 0, 56% 94%, 33% 0, 9% 100%);
+}
+
+.teeth-bottom {
+  width: 80%;
+  height: 30%;
+  left: 10%;
+  bottom: 0%;
+  position: absolute;
+  background: white;
+  clip-path: polygon(32% 8%, 36% 100%, 57% 21%, 69% 100%, 92% 0, 100% 100%, 0 100%, 5% 0, 18% 100%);
+}
+.arm {
+  width: 60%;
+  height: 80%;
+  right: -30%;
+  top: 10%;
+  position: absolute;
+  background: #b4d56a;
+  clip-path: polygon(79% 0, 80% 17%, 100% 11%, 86% 24%, 98% 33%, 79% 28%, 0 79%, 0% 70%, 75% 21%, 74% 16%);
+}
+.arm.left {
+  transform: rotateY(-180deg);
+  left: -30%;
+}
+.arm.blue {
+  background: #7ecdd1;
+}
+
+.leg {
+  width: 15%;
+  height: 40%;
+  left: 20%;
+  bottom: -30%;
+  position: absolute;
+  background: #b4d56a;
+  clip-path: polygon(66% 0, 100% 0, 100% 100%, 0 100%, 0 92%, 4% 87%, 10% 84%, 15% 82%, 31% 84%, 65% 84%);
+}
+.leg.right {
+  left: 60%;
+  transform: rotateY(-180deg);
+}
+.leg.blue {
+  background: #7ecdd1;
+}
+.hair {
+  width: 65%;
+  height: 30%;
+  left: 20%;
+  top: -15%;
+  position: absolute;
+  background: #7ecdd1;
+  clip-path: polygon(53% 0, 71% 69%, 100% 43%, 89% 100%, 14% 100%, 0 37%, 30% 70%);
+
+}
