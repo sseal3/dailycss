@@ -1,0 +1,109 @@
+
+body {
+  background: #301934;
+  height: 100%;
+  width:100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 12%;
+  width: 500px;
+  height: 500px;
+}
+
+.head {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: 60%;
+  border-radius: 40%;
+  background: #942025;
+}
+
+.head-copy {
+  width: 100%;
+  height: 100%;
+  left: -5px;
+  position: absolute;
+  background:  #942025;
+  border-radius: 40%;
+  z-index: 2;
+}
+.right-eye {
+  width: 25%;
+  height: 5%;
+  left: 55%;
+  top: 50%;
+  position: absolute;
+  background:  brown;
+  clip-path: polygon(100% 0, 100% 63%, 76% 100%, 5% 100%, 0% 38%);
+  transform: rotate(-10deg);
+  z-index: 3;
+}
+.right-eye::after {
+  content: '';
+  width: 90%;
+  height: 80%;
+  left: 5%;
+  top: 10%;
+  position: absolute;
+  background: white;
+  clip-path: polygon(100% 0, 100% 63%, 76% 100%, 5% 100%, 0% 38%);
+  z-index: 3;
+}
+.left-eye {
+  width: 25%;
+  height: 5%;
+  right: 55%;
+  top: 50%;
+  position: absolute;
+  background:  brown;
+  clip-path: polygon(0 0, 100% 38%, 95% 100%, 34% 100%, 0 63%);
+  transform: rotate(10deg);
+  z-index: 3;
+}
+.left-eye::after {
+  content: '';
+  width: 90%;
+  height: 80%;
+  left: 5%;
+  top: 10%;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 38%, 95% 100%, 34% 100%, 0 63%);
+  background: white;
+}
+.yellow-top {
+  width: 84%;
+  height: 80%;
+  left: 7%;
+  top: 15%;
+  position: absolute;
+  background:  #edcd5e;
+  z-index: 2;
+  clip-path: polygon(40% 25%, 60% 25%, 65% 0, 90% 0, 100% 30%, 100% 50%, 0 50%, 0 30%, 10% 0, 35% 0);
+
+}
+.yellow-bottom {
+  width: 84%;
+  height: 80%;
+  left: 7%;
+  top: 14.4%;
+  position: absolute;
+  background:  #edcd5e;
+  z-index: 2;
+  clip-path: polygon(85% 70%, 75% 100%, 65% 100%, 60% 95%, 40% 95%, 35% 100%, 25% 100%, 15% 70%, 0 50%, 100% 50%);
+
+}
+.mouth {
+  width: 25%;
+  height: 2%;
+  left: 37%;
+  top: 80%;
+  position: absolute;
+  background:  brown;
+  z-index: 3;
+}
