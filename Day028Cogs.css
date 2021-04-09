@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccddee;
+}
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 12%;
+  width: 200px;
+  height: 200px;
+}
+.box.two {
+  margin-left: 150px;
+}
+ul {
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background: #fff;
+}
+ul::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100px;
+  width: 100px;
+  background: #ccddee;
+  border-radius: 50%;
+  z-index: 2;
+}
+ul.two {
+  left: 50%;
+}
+ul li {
+  list-style: none;
+  float: left;
+  width: 20px;
+  height: 80px;
+  background: #fff;
+  margin: 0 1px;
+  animation: animate 2s linear infinite;
+  transform-origin: bottom;
+  position: absolute;
+  left: 40%;
+  top: -20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.box.two ul li {
+  animation: animate-reverse 2s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-reverse
+{
+  0%
+  {
+    transform: rotate(360deg);
+  }
+  100%
+  {
+    transform: rotate(0deg);
+  }
+}
+ul li:nth-child(1)
+{
+  animation-delay: .2s;
+}
+ul li:nth-child(2)
+{
+  animation-delay: .4s;
+}
+ul li:nth-child(3)
+{
+  animation-delay: .6s;
+}
+ul li:nth-child(4)
+{
+  animation-delay: .8s;
+}
+ul li:nth-child(5)
+{
+  animation-delay: 1s;
+}
+ul li:nth-child(6)
+{
+  animation-delay: 1.2s;
+}
+ul li:nth-child(7)
+{
+  animation-delay: 1.4s;
+}
+ul li:nth-child(8)
+{
+  animation-delay: 1.6s;
+}
+ul li:nth-child(9)
+{
+  animation-delay: 1.8s;
+}
+ul li:nth-child(10)
+{
+  animation-delay: 2s;
+}
+
+.box.two ul li:nth-child(1)
+{
+  animation-delay: .1s;
+}
+.box.two ul li:nth-child(2)
+{
+  animation-delay: .3s;
+}
+.box.two ul li:nth-child(3)
+{
+  animation-delay: .5s;
+}
+.box.two ul li:nth-child(4)
+{
+  animation-delay: .7s;
+}
+.box.two ul li:nth-child(5)
+{
+  animation-delay: .9s;
+}
+.box.two ul li:nth-child(6)
+{
+  animation-delay: 1.1s;
+}
+.box.two ul li:nth-child(7)
+{
+  animation-delay: 1.3s;
+}
+.box.two ul li:nth-child(8)
+{
+  animation-delay: 1.5s;
+}
+.box.two ul li:nth-child(9)
+{
+  animation-delay: 1.7s;
+}
+.box.two ul li:nth-child(10)
+{
+  animation-delay: 1.9s;
+}
