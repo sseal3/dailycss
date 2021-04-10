@@ -1,0 +1,68 @@
+body {
+  background: #46586e;
+  height: 100%;
+  width: 100%;
+}
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #465e8d;
+  border: 2px solid black;
+}
+.cloud {
+  position: absolute;
+  top: 38%;
+  left: 20%;
+  width: 60%;
+  height: 25%;
+  background: white;
+  border-radius: 100px;
+}
+.cloud::before {
+  content: '';
+  position: absolute;
+  top: -70%;
+  left: 30%;
+  width: 50%;
+  height: 120%;
+  background: white;
+  border-radius: 50%;
+}
+.cloud::after {
+  content: '';
+  position: absolute;
+  top: -35%;
+  left: 15%;
+  width: 25%;
+  height: 60%;
+  background: white;
+  border-radius: 50%;
+}
+.arrow {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  width: 20%;
+  height: 25%;
+  background: #45df99;
+  clip-path: polygon(75% 0, 75% 59%, 100% 60%, 50% 100%, 0 60%, 25% 60%, 25% 0);
+  animation-name: moveit;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveit
+{
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
