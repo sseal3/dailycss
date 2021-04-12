@@ -1,0 +1,23 @@
+
+body {
+  background: #ffdb58;
+  height: 100%;
+  width:100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 500px;
+  height: 500px;
+  background: #f7df1e;
+  border: 10px solid black;
+}
+.letters {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1900%;
+  margin: 30%;
+  letter-spacing: -10px;
+}
