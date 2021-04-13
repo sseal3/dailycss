@@ -1,0 +1,38 @@
+body {
+  background: coral;
+  height: 100%;
+  width:100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 500px;
+  height: 500px;
+}
+.red-left {
+  position: absolute;
+  width: 45%;
+  right: 49.9%;
+  height: 100%;
+  background: #dd0330;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 15% 75%);
+}
+.red-right {
+  position: absolute;
+  width: 45%;
+  left: 50%;
+  height: 100%;
+  background: #c30e2e;
+  clip-path: polygon(0 0, 100% 15%, 85% 75%, 0% 100%);
+}
+.letters {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 420px;
+  position: absolute;
+  left: 105px;
+  top: 50px;
+  color: white;
+}
