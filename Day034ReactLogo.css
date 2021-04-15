@@ -1,0 +1,57 @@
+
+body {
+  background: black;
+  height: 100%;
+  width:100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 500px;
+  height: 500px;
+}
+
+.dot {
+  position: absolute;
+  left: 45%;
+  width: 15%;
+  height: 15%;
+  top: 45%;
+  background: #00d8ff;
+  border-radius: 100%;
+}
+.band {
+  position: absolute;
+  width: 80%;
+  height: 30%;
+  top: 35%;
+  left: 10%;
+  background: transparent;
+  border-radius: 100%;
+  border: 14px solid #00d8ff;
+  animation: myOrbit 12s linear infinite;
+}
+.band.b {
+  transform: rotate(60deg);
+  animation: myOrbitb 12s linear infinite;
+}
+.band.c {
+  transform: rotate(-60deg);
+  animation: myOrbitc 12s linear infinite;
+}
+
+@keyframes myOrbit {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); } 
+}
+@keyframes myOrbitb {
+  0%   { transform: rotate(60deg); }
+  100% { transform: rotate(-300deg); } 
+}
+@keyframes myOrbitc {
+  0%   { transform: rotate(-60deg); }
+  100% { transform: rotate(-420deg); } 
+}
