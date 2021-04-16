@@ -1,0 +1,110 @@
+body {
+  background: #378a6e;
+  height: 100%;
+  width:100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 300px;
+  height: 300px;
+  background: white;
+}
+
+.triangle-bottom {
+  position: absolute;
+  left: 18.5%;
+  width: 63.5%;
+  height: 63.5%;
+  bottom: -29%;
+  transform: rotate(45deg);
+  background: #60b5cc;
+  clip-path: polygon(100% 0, 0 100%, 0 0);
+  animation: comein 1s;
+	transform-style: preserve-3d;
+}
+.triangle-corner {
+  position: absolute;
+  right: 3.2%;
+  width: 43%;
+  height: 43%;
+  top: 3%;
+  background: #60b5cc;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  animation: comein 1s;
+  animation-delay: .1s;
+	transform-style: preserve-3d;
+}
+.triangle-left {
+  position: absolute;
+  left: -28.5%;
+  width: 63.5%;
+  height: 63.5%;
+  top: 18.5%;
+  transform: rotate(45deg);
+  background: #5a6378;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  animation: comein 1s;
+  animation-delay: .3s;
+	transform-style: preserve-3d;
+}
+.square {
+  position: absolute;
+  right: 9.5%;
+  width: 31.8%;
+  height: 31.8%;
+  top: 34.5%;
+  transform: rotate(45deg);
+  background: #8ad437;
+  animation: comein 1s;
+  animation-delay: .15s;
+	transform-style: preserve-3d;
+}
+.parallelogram {
+  position: absolute;
+  left: 15.1%;
+  width: 45.5%;
+  height: 21%;
+  top: 3%;
+  transform: skew(45deg);
+  background: #8ad437;
+  animation: comein 1s;
+  animation-delay: .2s;
+	transform-style: preserve-3d;
+}
+.triangle-center {
+  position: absolute;
+  left: 34.5%;
+  width: 31.1%;
+  height: 31.1%;
+  top: 11%;
+  transform: rotate(45deg);
+  background: #efa500;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  animation: comein 1s;
+  animation-delay: .25s;
+	transform-style: preserve-3d;
+}
+
+.triangle-side {
+  position: absolute;
+  right: -11%;
+  width: 28.3%;
+  height: 28.3%;
+  bottom: 10.8%;
+  transform: rotate(45deg);
+  background: #efa500;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  animation: comein 1s;
+  animation-delay: .3s;
+	transform-style: preserve-3d;
+}
+
+@keyframes comein {
+  0%  { transform: scale(1.0) rotate(0deg) translate(300px); }
+  50%  { transform: rotate(340deg) translate(-300px,0px) }
+  75% { transform: scale(0.5) rotate(5deg) translate(1140px,-137px); 
+}
