@@ -1,0 +1,61 @@
+body {
+  background: #a91b0d;
+  background-image: linear-gradient(to bottom, transparent 50%, #00448d 50%),
+    linear-gradient(to right, #0077aa 50%, #00448d 50%);
+  background-size: 8px 8px, 8px 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 600px;
+	perspective: 500px;
+}
+.top {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  background: black;
+  box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.3), 0 15px 6px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 2px;
+}
+
+.screen {
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  width: 94%;
+  height: 92%;
+  border-radius: 1px;
+  background: rgb(123,123,123);
+  background: linear-gradient(135deg, rgba(123,123,123,1) 0%, rgba(32,30,31,1) 100%);
+}
+
+.stand {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 20%;
+  height: 10%;
+  background: black;
+  box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.3), 0 15px 6px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 2px;
+}
+.base {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 20%;
+  top: 55%;
+  background: black;
+  box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.3), 0 15px 6px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  transform: rotate3d(-1,0,0,-50deg);
+}
