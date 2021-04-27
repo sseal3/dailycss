@@ -1,0 +1,219 @@
+body {
+  background: black;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 12%;
+  width: 400px;
+  height: 400px;
+}
+
+.rocket {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+  transform: rotate(-45deg);
+}
+
+.rocket-body {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  height: 40%;
+  width: 90%;
+  background: #a8bbeb;
+  border-radius: 100%;
+}
+.rocket-nose {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  height: 40%;
+  width: 90%;
+  background: #eb0045;
+  border-radius: 100%;
+  clip-path: polygon(75% 0, 100% 0, 100% 100%, 75% 100%);
+}
+.rocket-mount {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  height: 40%;
+  width: 90%;
+  background: #eb0045;
+  border-radius: 100%;
+  clip-path: polygon(0 0, 18% 0, 18% 100%, 0 100%);
+  z-index: 1;
+}
+.rocket-cover {
+  position: absolute;
+  top: 20%;
+  left: 17%;
+  height: 40%;
+  width: 90%;
+  background: black;
+  clip-path: polygon(0 0, 10% 0, 10% 100%, 0 100%);
+  z-index: 2;
+}
+.rocket-cover.thin {
+  z-index: 4;
+  width: 30%;
+  left: 25%;
+}
+.rocket-fin-left {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  height: 40%;
+  width: 90%;
+  background: #cb0045;
+  border-radius: 100%;
+  transform: rotate(10deg);
+  z-index: -1;
+}
+.rocket-fin-left::after {
+  content: '';
+  position: absolute;
+  top: 3%;
+  left: -2%;
+  height: 100%;
+  width: 42%;
+  background: black;
+  border-radius: 100%;
+  z-index: -1;
+}
+.rocket-fin-right {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  height: 40%;
+  width: 90%;
+  background: #eb0045;
+  border-radius: 100%;
+  z-index: -1;
+  transform: rotate(-10deg);
+}
+.rocket-fin-right::after {
+  content: '';
+  position: absolute;
+  bottom: 3%;
+  left: -2%;
+  height: 100%;
+  width: 42%;
+  background: black;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.flames {
+  position: absolute;
+  top: 27%;
+  left: -4%;
+  height: 30%;
+  width: 30%;
+  background: yellow;
+  z-index: -1;
+  clip-path: polygon(20% 23%, 51% 21%, 53% 0, 100% 21%, 84% 80%, 70% 62%, 42% 91%, 43% 62%, 0 71%, 35% 43%);
+  transform: rotate(15deg);
+  z-index: 3;
+}
+.flames.orange {
+  background: orange;
+  height: 20%;
+  width: 20%;
+  left: 5%;
+  top: 31%;
+}
+
+
+.star {
+  position: absolute;
+  top: -10%;
+  left: -60%;
+  height: 20%;
+  width: 20%;
+  background: #fffa86;
+  z-index: -1;
+  clip-path: polygon(50% 0%, 65% 29%, 98% 35%, 74% 58%, 79% 91%, 50% 74%, 21% 91%, 26% 57%, 2% 35%, 36% 30%);
+  transform: rotate(15deg);
+  z-index: 3;
+}
+.star:nth-child(2) {
+  height: 10%;
+  width: 10%;
+  left: 15%;
+  transform: rotate(-5deg);
+  top: -10%;
+}
+.star:nth-child(3) {
+  left: 125%;
+  top: -15%;
+  transform: rotate(-15deg);
+}
+.star:nth-child(4) {
+  left: 75%;
+  top: 105%;
+  transform: rotate(15deg);
+}
+.star:nth-child(5) {
+  height: 10%;
+  width: 10%;
+  left: 105%;
+  transform: rotate(-5deg);
+  top: 37%;
+}
+.star:nth-child(6) {
+  height: 7%;
+  width: 7%;
+  left: 145%;
+  transform: rotate(-25deg);
+  top: 70%;
+}
+.star:nth-child(7) {
+  height: 7%;
+  width: 7%;
+  left: -45%;
+  transform: rotate(5deg);
+  top: 40%;
+}
+.star:nth-child(8) {
+  height: 5%;
+  width: 5%;
+  left: -85%;
+  transform: rotate(-25deg);
+  top: 70%;
+}
+.star:nth-child(9) {
+  height: 20%;
+  width: 20%;
+  left: -25%;
+  transform: rotate(-25deg);
+  top: 100%;
+}
+.porthole {
+  position: absolute;
+  top: 28%;
+  left: 55%;
+  height: 22%;
+  width: 22%;
+  background: #4887da;
+  border-radius: 100%;
+  z-index: 2;
+}
+.porthole::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 16%;
+  height: 70%;
+  width: 70%;
+  background: white;
+  border-radius: 100%;
+  z-index: 2;
+}
