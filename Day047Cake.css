@@ -1,0 +1,135 @@
+body {
+  background: #60aed4;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 12%;
+  width: 400px;
+  height: 400px;
+}
+.candle {
+  position: absolute;
+  height: 8%;
+  width: 2%;
+  background: pink;
+  left: 49%;
+  top: 3%;
+}
+.candle::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: white;
+  opacity: 20%;
+}
+.candle::after {
+  content: '';
+  position: absolute;
+  background: gold;
+  height: 50%;
+  width: 200%;
+  top: -70%;
+  left: -50%;
+  border-radius: 0 100%;
+  transform: rotate(45deg);
+}
+.candle:nth-child(2) {
+  left: 45%;
+}
+.candle:nth-child(3) {
+  left: 41%;
+}
+.candle:nth-child(4) {
+  left: 53%;
+}
+.candle:nth-child(5) {
+  left: 57%;
+}
+.tier {
+  position: absolute;
+  border-radius: 10px 10px 0px 0px;
+  height: 25%;
+  width: 40%;
+  top: 10%;
+  background: #7554ae;
+  left: 30%;
+  overflow: hidden;
+}
+.tier::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: white;
+  opacity: 20%;
+  border-radius: 10px 0px 0px 0px;
+}
+.tier::after {
+  content: '';
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 50%;
+  background: blue;
+  opacity: 20%;
+}
+.tier.mid {
+  height: 25%;
+  width: 60%;
+  top: 35%;
+  background: #8d90e2;
+  left: 20%;
+}
+.tier.bottom {
+  height: 25%;
+  width: 80%;
+  top: 60%;
+  background: #bd98e0;
+  left: 10%;
+}
+.frosting {
+  position: absolute;
+  border-radius: 0% 0% 50px 50px;
+  height: 30px;
+  width: 60px;
+  top: 0%;
+  background: #f3c6f2;
+  left: 32%;
+  overflow: hidden;
+}
+.frosting:nth-child(2) {
+  left: -2%;
+}
+.frosting:nth-child(3) {
+  left: 66%;
+}
+.frosting:nth-child(4) {
+  left: 21%;
+  width: 30px;
+  top: -2px;
+}
+.frosting:nth-child(5) {
+  left: 55%;
+  width: 30px;
+  top: -2px;
+}
+.frosting:nth-child(6) {
+  left: 89%;
+  width: 30px;
+  top: -2px;
+}
+.frosting:nth-child(7) {
+  left: 15%;
+}
+.frosting:nth-child(8) {
+  left: 49%;
+}
+.frosting:nth-child(9) {
+  left: 83%;
+}
